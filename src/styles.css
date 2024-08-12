@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.decks,
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.mixer {
+  position: relative;
+}
+
+.eq-1 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50px;
+  top: 50px;
+  gap: 10px;
+}
+.eq-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 50px;
+  top: 50px;
+  gap: 10px;
+}
+
+.deck-1,
+.deck-2 {
+  position: relative;
+}
+
+.volume-controls {
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#volumeControl-1,
+#volumeControl-2 {
+  transform: rotate(-90deg);
+}
+
+#text-1,
+#text-2 {
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 12px; /* Font size */
+  fill: #000000; /* Text color */
+}
+
+.record {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  transition: 0.3s linear;
+}
+
+#arm-1,
+#arm-2 {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  transform-origin: 105px 105px;
+}
+
+#stop-start-1,
+#stop-start-2 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+  padding: 15px;
+}
+
+.play {
+  transition: 0.3s linear;
+}
+
+#speedControl-1,
+#speedControl-2 {
+  position: absolute;
+  bottom: 100px;
+  right: -20px;
+  transform: rotate(90deg);
+  z-index: 2;
+}
+
+/* Basic styles for the range input */
+input[type='range'].slider {
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+/* Webkit (Chrome, Safari) styles */
+input[type='range'].slider::-webkit-slider-runnable-track {
+  background: grey;
+  height: 30px;
+  border-radius: 5px;
+}
+
+input[type='range'].slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #cfcfcf;
+  cursor: pointer;
+  margin-top: 5px;
+  border-radius: 5px;
+}

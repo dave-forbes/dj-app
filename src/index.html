@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="dist/bundle.js" defer></script>
+
+    <title>Audio Playback Speed Control</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="decks">
+        <div class="deck-1">
+          <button id="stop-start-1">Play</button>
+          <input
+            type="range"
+            id="speedControl-1"
+            min="0.9"
+            max="1.1"
+            value="1"
+            step="0.01"
+            class="slider"
+          />
+          <svg
+            width="654"
+            height="502"
+            viewBox="0 0 654 502"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="654" height="502" fill="#D9D9D9" />
+          </svg>
+          <svg
+            width="486"
+            height="486"
+            viewBox="0 0 487 487"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="record"
+          >
+            <circle cx="243" cy="243" r="243" fill="#A5A2A2" />
+            <circle cx="243" cy="243" r="215" fill="#606060" />
+            <circle cx="243" cy="243" r="214" fill="#2E2E2E" />
+            <circle
+              id="circlePath"
+              cx="243"
+              cy="243"
+              r="75"
+              fill="#FBFBFB"
+            />
+            <circle cx="243" cy="243" r="3.5" fill="#888888" />
+            <text
+              id="text-1"
+              x="240"
+              y="240"
+              text-anchor="middle"
+              alignment-baseline="middle"
+            >
+              <textPath
+                href="#circlePath"
+                startOffset="50%"
+                text-anchor="middle"
+                font-size="16"
+                fill="#000000"
+              >
+                Centered Text
+              </textPath>
+            </text>
+          </svg>
+          <svg
+            width="176"
+            height="463"
+            viewBox="0 0 176 463"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="arm-1"
+          >
+            <circle cx="96" cy="105" r="80" fill="#656565" />
+            <circle cx="96" cy="105" r="58.6667" fill="#D9D9D9" />
+            <path
+              d="M143.5 9L95 0L84.5 46.5L98.5 64L69.5 206L90.5 331.5L44.5 399.5L36.5 394.5L0 442L30 462.5L67 415.5L61 410L110.5 334.5L87.5 209.5L117.5 67L133.5 55L143.5 9Z"
+              fill="#979494"
+            />
+          </svg>
+        </div>
+        <div class="mixer">
+          <div class="eq-1">
+            <input type="range" class="input-knob" id="hi-eq-1" />
+            <input type="range" class="input-knob" id="med-eq-1" />
+            <input type="range" class="input-knob" id="low-eq-1" />
+          </div>
+          <div class="eq-2">
+            <input type="range" class="input-knob" id="hi-eq-2" />
+            <input type="range" class="input-knob" id="med-eq-2" />
+            <input type="range" class="input-knob" id="low-eq-2" />
+          </div>
+
+          <div class="volume-controls">
+            <input
+              type="range"
+              id="volumeControl-1"
+              min="0"
+              max="1"
+              value="0.5"
+              step="0.1"
+              class="slider"
+            />
+            <input
+              type="range"
+              id="volumeControl-2"
+              min="0"
+              max="1"
+              value="0.5"
+              step="0.1"
+              class="slider"
+            />
+          </div>
+          <svg
+            width="300"
+            height="491"
+            viewBox="0 0 300 491"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="300" height="491" fill="#5D5C5C" />
+          </svg>
+        </div>
+        <div class="deck-2">
+          <button id="stop-start-2">Play</button>
+          <input
+            type="range"
+            id="speedControl-2"
+            min="0.9"
+            max="1.1"
+            value="1"
+            step="0.01"
+            class="slider"
+          />
+          <svg
+            width="654"
+            height="502"
+            viewBox="0 0 654 502"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="654" height="502" fill="#D9D9D9" />
+          </svg>
+          <svg
+            width="487"
+            height="487"
+            viewBox="0 0 487 487"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="record"
+          >
+            <circle
+              cx="243.982"
+              cy="243.061"
+              r="243"
+              fill="#A5A2A2"
+            />
+            <circle cx="243" cy="240" r="215" fill="#606060" />
+            <circle cx="243" cy="240" r="214" fill="#2E2E2E" />
+            <circle
+              id="circlePath"
+              cx="243"
+              cy="243"
+              r="75"
+              fill="#FBFBFB"
+            />
+            <circle cx="243.5" cy="243.5" r="3.5" fill="#888888" />
+            <text
+              id="text-2"
+              x="240"
+              y="240"
+              text-anchor="middle"
+              alignment-baseline="middle"
+            >
+              <textPath
+                href="#circlePath"
+                startOffset="50%"
+                text-anchor="middle"
+                font-size="16"
+                fill="#000000"
+              >
+                Centered Text
+              </textPath>
+            </text>
+          </svg>
+          <svg
+            width="176"
+            height="463"
+            viewBox="0 0 176 463"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="arm-2"
+          >
+            <circle cx="96" cy="105" r="80" fill="#656565" />
+            <circle cx="96" cy="105" r="58.6667" fill="#D9D9D9" />
+            <path
+              d="M143.5 9L95 0L84.5 46.5L98.5 64L69.5 206L90.5 331.5L44.5 399.5L36.5 394.5L0 442L30 462.5L67 415.5L61 410L110.5 334.5L87.5 209.5L117.5 67L133.5 55L143.5 9Z"
+              fill="#979494"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <div class="inputs">
+        <div>
+          <input type="file" id="audioUpload-1" accept="audio/*" />
+          <br /><br />
+          <audio id="audioElement-1" controls>
+            Your browser does not support the audio element.
+          </audio>
+          <br />
+        </div>
+        <div>
+          <input type="file" id="audioUpload-2" accept="audio/*" />
+          <br /><br />
+          <audio id="audioElement-2" controls>
+            Your browser does not support the audio element.
+          </audio>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Web Audio API Seek Example</title>
+  </head>
+  <body>
+    <input type="file" id="audioUpload" accept="audio/*" />
+    <br /><br />
+    <label for="seekControl">Seek:</label>
+    <input
+      type="range"
+      id="seekControl"
+      min="0"
+      max="100"
+      value="0"
+      step="0.01"
+    />
+    <span id="currentTime">0:00</span>
+    <span id="duration">0:00</span>
+    <br />
+    <button id="playPauseBtn">Play</button>
+
+    <script>
+      const audioUpload = document.getElementById('audioUpload');
+      const seekControl = document.getElementById('seekControl');
+      const playPauseBtn = document.getElementById('playPauseBtn');
+      const currentTimeDisplay =
+        document.getElementById('currentTime');
+      const durationDisplay = document.getElementById('duration');
+
+      const audioContext = new (window.AudioContext ||
+        window.webkitAudioContext)();
+      let audioBuffer;
+      let sourceNode;
+      let isPlaying = false;
+      let startTime = 0;
+      let pausedAt = 0;
+      let duration = 0;
+
+      function loadAudio(file) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          audioContext.decodeAudioData(
+            event.target.result,
+            function (buffer) {
+              audioBuffer = buffer;
+              duration = buffer.duration;
+              durationDisplay.textContent = formatTime(duration);
+              seekControl.max = Math.floor(duration);
+            }
+          );
+        };
+        reader.readAsArrayBuffer(file);
+      }
+
+      function playAudio(startTime) {
+        if (sourceNode) {
+          sourceNode.disconnect();
+        }
+        sourceNode = audioContext.createBufferSource();
+        sourceNode.buffer = audioBuffer;
+        sourceNode.connect(audioContext.destination);
+        sourceNode.start(0, startTime);
+        isPlaying = true;
+        playPauseBtn.textContent = 'Pause';
+      }
+
+      function pauseAudio() {
+        if (sourceNode) {
+          sourceNode.stop();
+          pausedAt = audioContext.currentTime - startTime;
+          isPlaying = false;
+          playPauseBtn.textContent = 'Play';
+        }
+      }
+
+      function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+      }
+
+      function updateCurrentTime() {
+        if (isPlaying) {
+          const currentTime =
+            pausedAt + (audioContext.currentTime - startTime);
+          currentTimeDisplay.textContent = formatTime(currentTime);
+          seekControl.value = Math.floor(currentTime);
+          requestAnimationFrame(updateCurrentTime);
+        }
+      }
+
+      audioUpload.addEventListener('change', function () {
+        const files = this.files;
+        if (files.length > 0) {
+          const file = files[0];
+          loadAudio(file);
+        }
+      });
+
+      playPauseBtn.addEventListener('click', function () {
+        if (isPlaying) {
+          pauseAudio();
+        } else {
+          startTime = audioContext.currentTime - pausedAt;
+          playAudio(pausedAt);
+          updateCurrentTime();
+        }
+      });
+
+      seekControl.addEventListener('input', function () {
+        if (audioBuffer) {
+          pausedAt = parseFloat(this.value);
+          if (isPlaying) {
+            startTime = audioContext.currentTime - pausedAt;
+            playAudio(pausedAt);
+          }
+          currentTimeDisplay.textContent = formatTime(pausedAt);
+        }
+      });
+    </script>
+  </body>
+</html> -->
