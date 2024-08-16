@@ -120,3 +120,8 @@ input[type='range'].slider::-webkit-slider-thumb {
   margin-top: 5px;
   border-radius: 5px;
 }
+
+#seekControl-1,
+#seekControl-2 {
+  width: 400px;
+}
