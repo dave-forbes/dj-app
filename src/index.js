@@ -2,7 +2,6 @@ import './styles.css';
 import './input-knobs.js';
 import initializeEQ from './eq.js';
 
-function setupAudioControls(deckNo) {
   const audioUpload = document.getElementById(
     `audioUpload-${deckNo}`
   );
@@ -88,7 +87,7 @@ function setupAudioControls(deckNo) {
 }
 
 // Setup controls for the first audio element
-setupAudioControls(1);
+initilizedecks(1);
 
 // Setup controls for the second audio element
-setupAudioControls(2);
+initilizedecks(2);
