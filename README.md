@@ -10,11 +10,13 @@ Tech
 - HTML5
 - Webpack
 - Input Knobs - https://github.com/g200kg/input-knobs
-- Web Audio API 
+- Web Audio API
+- Figma
 
 ## Features
 
-- Using Web Audio API, upload audio, play adjust speed, volume and eq frequencies. 
+- Using Web Audio API, upload audio, play adjust speed, volume and eq frequencies.
+- SVG graphics created in figma with CSS animations/transitions to respond to changes in state of turtables.
 
 ## Ideas
 
