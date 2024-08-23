@@ -22,5 +22,11 @@ Tech
 - Create user accounts/authentication.
 - Create a system to record a mix and save to database.
 - Add a 'cue' button to hear/mix next track without it recording to the mix.
-- Add feature to share mixes and/or comment on other users mixes. 
+- Add feature to share mixes and/or comment on other users mixes.
+
+## Run locally
+
+- Clone repo
+- npm install
+- npm run start
 
